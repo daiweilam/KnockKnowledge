@@ -1,0 +1,39 @@
+.category {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-top: -20px;
+
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .list {
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      .image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+        height: 250px;
+        font-size: 64px;
+        background: #fff;
+      }
+
+      .title {
+        font-size: 28px;
+      }
+    }
+  }
+}
