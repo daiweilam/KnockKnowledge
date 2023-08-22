@@ -1,32 +1,33 @@
 /* eslint-disable @next/next/no-img-element */
+import Section from "@/components/Home/Section";
 import Banner from "@/components/Home/Banner";
+import Slogan from "@/components/Home/Slogan";
 import Category from "@/components/Home/Category";
 import Intro from "@/components/Home/Intro";
+import Review from "@/components/Home/Review";
 import styles from "@/styles/Index.module.scss";
 
 const Index = () => {
   return (
     <div className={styles.index}>
-      <section>
+      <Section>
         <Banner />
-      </section>
-      <section>
-        <div className={styles.slogan}>
+      </Section>
+      <Section>
+        <Slogan>
           Stay hungry<span>.</span> Stay foolish<span>.</span>
-        </div>
-      </section>
-      <section>
+        </Slogan>
+      </Section>
+      <Section>
         <Category />
-      </section>
-      <section>
+      </Section>
+      <Section>
         <Intro />
-      </section>
+      </Section>
       <hr />
-      <section>
-        <div className={styles.slogan}>
-          What our customer say<span>.</span>
-        </div>
-      </section>
+      <Section>
+        <Review />
+      </Section>
     </div>
   );
 };
