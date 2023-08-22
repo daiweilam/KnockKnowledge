@@ -1,8 +1,13 @@
 .nav {
-  margin: 40px 0;
-  padding: 28px 0;
+  position: sticky;
+  top: 0;
+  left: 0;
+  margin: 46px 0;
+  padding: 16px 0;
   font-size: 18px;
   font-weight: 500;
+  background: #faf7f6;
+  z-index: 100;
 
   nav {
     display: flex;
@@ -49,19 +54,16 @@
           position: absolute;
           top: 100%;
           left: 0;
+          z-index: 100;
 
           a {
             .item {
-              background: rgba(255, 255, 255, 0.5);
-
-              &:hover {
-                background: rgba(255, 255, 255, 1);
-              }
+              background: rgba(255, 255, 255, 0.9);
             }
 
             &:not(:last-child) {
               .item {
-                border-bottom: 1px solid #eee;
+                border-bottom: 1px solid #fff;
               }
             }
           }
