@@ -1,4 +1,4 @@
-import styles from "@/styles/index.module.scss";
+import styles from "@/styles/Index.module.scss";
 
 const Index = () => {
   return <div className={styles.index}>Index</div>;
