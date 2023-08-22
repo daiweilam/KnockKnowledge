@@ -1,14 +1,30 @@
+import { useState } from "react";
 import styles from "@/styles/Home/Category.module.scss";
 
+const categories = [
+  { id: 1, name: "All categories", slug: "all" },
+  { id: 2, name: "Entertainment", slug: "entertainment" },
+  { id: 3, name: "Lifestyle", slug: "lifestyle" },
+  { id: 4, name: "Writing", slug: "writing" },
+  { id: 5, name: "Business", slug: "business" },
+  { id: 6, name: "Food", slug: "food" },
+];
+
 const Category = () => {
+  const [active, setActive] = useState("all");
+
   return (
     <div className={styles.category}>
       <div className={styles.menu}>
-        <div>All categories</div>
-        <div>Entertainment</div>
-        <div>Lifestyle</div>
-        <div>Writing</div>
-        <div>Business</div>
+        {categories.map((x: { id: number; name: string; slug: string }) => (
+          <div
+            className={active === x.slug ? styles.active : ""}
+            onClick={() => setActive(x.slug)}
+            key={x.id}
+          >
+            {x.name}
+          </div>
+        ))}
       </div>
       <div className={styles.list}>
         <div className={styles.card}>
