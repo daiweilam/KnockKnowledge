@@ -19,7 +19,7 @@ const Category = () => {
         {categories.map((x: { id: number; name: string; slug: string }) => (
           <div
             className={active === x.slug ? styles.active : ""}
-            onClick={() => setActive(x.slug)}
+            onMouseEnter={() => setActive(x.slug)}
             key={x.id}
           >
             {x.name}

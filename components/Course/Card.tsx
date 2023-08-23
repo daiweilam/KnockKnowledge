@@ -1,13 +1,18 @@
 import styles from "@/styles/Course/Card.module.scss";
+import Link from "next/link";
 
 const Card = () => {
   return (
     <div className={styles.card}>
-      <div className={styles.cover}>
-        <i className="bx bx-right-arrow" />
-      </div>
+      <Link href="/course/1">
+        <div className={styles.cover}>
+          <i className="bx bx-right-arrow" />
+        </div>
+      </Link>
       <div className={styles.title}>
-        <div>Lectus tincidunt duis adipiscing</div>
+        <Link href="/course/1">
+          <div>Lectus tincidunt duis adipiscing</div>
+        </Link>
         <i className="bx bx-bookmark-alt" />
       </div>
       <div className={styles.info}>
