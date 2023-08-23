@@ -7,7 +7,7 @@ const Banner = () => {
       <div className={styles.main}>
         <div className={styles.video}>
           <div className={styles.image}>
-            <i className="bx bx-caret-right-circle" />
+            <i className="bx bx-right-arrow" />
           </div>
         </div>
         <div className={styles.content}>

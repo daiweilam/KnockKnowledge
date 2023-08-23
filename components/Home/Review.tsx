@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import Slogan from "./Slogan";
+import Slogan from "../Layout/Slogan";
 import styles from "@/styles/Home/Review.module.scss";
 
 const Review = () => {
