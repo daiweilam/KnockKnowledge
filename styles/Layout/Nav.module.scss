@@ -41,12 +41,16 @@
 
       .dropdown {
         position: relative;
-        display: flex;
-        align-items: center;
-        gap: 8px;
 
-        i {
-          font-size: 24px;
+        .item {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+
+          i {
+            font-size: 24px;
+            transition: 0.3s;
+          }
         }
 
         .dropdownMenu {
@@ -70,6 +74,12 @@
         }
 
         &:hover {
+          .item {
+            i {
+              transform: rotate(180deg);
+            }
+          }
+
           .dropdownMenu {
             display: inline;
           }
