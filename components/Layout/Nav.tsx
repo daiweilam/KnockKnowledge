@@ -32,7 +32,7 @@ const Nav = () => {
               </Link>
               <div className={styles.dropdownMenu}>
                 {course_categories.map((x: { id: number; name: string; slug: string }) => (
-                  <Link href={`/course/${x.slug}`} key={x.id}>
+                  <Link href={`/category/${x.slug}`} key={x.id}>
                     <div className={styles.item}>{x.name}</div>
                   </Link>
                 ))}
