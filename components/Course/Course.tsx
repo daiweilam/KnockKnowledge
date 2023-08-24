@@ -9,10 +9,12 @@ const Course = ({ category }: { category: string }) => {
     <div className={styles.course}>
       <Banner />
       <Section>
-        <Slogan>
-          <b>{category}</b> Explore for free
-        </Slogan>
-        <List />
+        <div className={styles.section}>
+          <Slogan>
+            <b>{category}</b> Explore for free
+          </Slogan>
+          <List />
+        </div>
       </Section>
       <hr />
       <Section>
