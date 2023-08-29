@@ -6,8 +6,6 @@ const List = () => {
     <div className={styles.list}>
       <Card />
       <Card />
-      <Card />
-      <Card />
     </div>
   );
 };

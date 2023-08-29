@@ -1,8 +1,8 @@
 import styles from "@/styles/Layout/Share.module.scss";
 
-const Share = () => {
+const Share = ({ column }: { column?: boolean }) => {
   return (
-    <div className={styles.share}>
+    <div className={`${styles.share} ${column && styles.column}`}>
       <i className="bx bxl-facebook" />
       <i className="bx bxl-twitter" />
       <i className="bx bxl-whatsapp" />

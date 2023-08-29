@@ -22,4 +22,15 @@
     font-weight: 700;
     text-transform: uppercase;
   }
+
+  &.column {
+    margin-left: -12px;
+
+    &::before {
+      content: "Share this post";
+      top: -36px;
+      left: 12px;
+      font-size: 18px;
+    }
+  }
 }

@@ -1,4 +1,4 @@
-import styles from "@/styles/Home/Section.module.scss";
+import styles from "@/styles/Layout/Section.module.scss";
 
 const Section = ({ children }: { children: React.ReactNode }) => {
   return <div className={styles.section}>{children}</div>;

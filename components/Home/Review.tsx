@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import Slogan from "../Layout/Slogan";
-import Icon from "../Layout/Icon";
+import UserLabel from "../Layout/UserLabel";
 import styles from "@/styles/Home/Review.module.scss";
 
 const Review = () => {
@@ -14,10 +14,7 @@ const Review = () => {
           Lorem ipsum dolor sit amet augue est diam nulla a sagittis odio. Nibh cras duis fusce est
           incididunt cursus.
         </div>
-        <div className={styles.user}>
-          <Icon />
-          <div>By John Doe</div>
-        </div>
+        <UserLabel />
       </div>
     );
   };
