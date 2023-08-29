@@ -1,5 +1,8 @@
-import styles from "@/styles/Course/Card.module.scss";
 import Link from "next/link";
+import Info from "./Info";
+import Review from "./Review";
+import Price from "../Layout/Price";
+import styles from "@/styles/Course/Card.module.scss";
 
 const Card = () => {
   return (
@@ -15,22 +18,14 @@ const Card = () => {
         </Link>
         <i className="bx bx-bookmark-alt" />
       </div>
-      <div className={styles.info}>
+      <Info>
         <span>10 videos</span>
         <span>2h 30m</span>
         <span>100 classmates</span>
-      </div>
+      </Info>
       <div className={styles.footer}>
-        <div className={styles.review}>
-          <div className={styles.star}>
-            <i className="bx bxs-star" />
-            <i className="bx bxs-star" />
-            <i className="bx bxs-star" />
-            <i className="bx bx-star" />
-          </div>
-          <div>3 reviews</div>
-        </div>
-        <div className={styles.price}>HKD$500.0</div>
+        <Review />
+        <Price>HKD$500.0</Price>
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import Slogan from "../Layout/Slogan";
+import Icon from "../Layout/Icon";
 import styles from "@/styles/Home/Review.module.scss";
 
 const Review = () => {
@@ -14,9 +15,7 @@ const Review = () => {
           incididunt cursus.
         </div>
         <div className={styles.user}>
-          <div className={styles.icon}>
-            <i className="bx bx-user" />
-          </div>
+          <Icon />
           <div>By John Doe</div>
         </div>
       </div>

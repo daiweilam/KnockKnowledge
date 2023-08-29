@@ -45,38 +45,8 @@
     }
   }
 
-  .info {
-    color: #666;
-
-    span {
-      &:not(:last-child):after {
-        content: "・";
-      }
-    }
-  }
-
   .footer {
     display: flex;
     justify-content: space-between;
-
-    .review {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-
-      .star {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        font-size: 24px;
-      }
-    }
-
-    .price {
-      color: #e76f51;
-      font-style: italic;
-      font-size: 36px;
-      font-weight: 700;
-    }
   }
 }

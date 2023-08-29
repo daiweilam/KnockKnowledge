@@ -1,5 +1,12 @@
 import List from "@/components/Course/List";
+import Share from "@/components/Layout/Share";
+import Video from "@/components/Course/Video";
+import PlayList from "@/components/Course/PlayList";
+import Price from "@/components/Layout/Price";
+import Review from "@/components/Course/Review";
+import Info from "@/components/Course/Info";
 import Button from "@/components/Layout/Button";
+import Icon from "@/components/Layout/Icon";
 import styles from "@/styles/Course/CourseDetail.module.scss";
 
 const CourseDetail = () => {
@@ -7,25 +14,14 @@ const CourseDetail = () => {
     <div className={styles.courseDetail}>
       <div className={styles.header}>
         <div className={styles.title}>Lectus tincidunt duis adipiscing</div>
-        <div className={styles.share}>
-          <i className="bx bxl-facebook" />
-          <i className="bx bxl-twitter" />
-          <i className="bx bxl-whatsapp" />
-          <i className="bx bxl-telegram" />
-          <i className="bx bx-bookmark-alt" />
-        </div>
+        <Share />
       </div>
       <div className={styles.player}>
         <div className={styles.video}>
-          <i className="bx bx-right-arrow" />
+          <Video />
         </div>
         <div className={styles.list}>
-          <div className={styles.box}>
-            <div className={styles.title}>
-              <span>Course Introduction</span>
-              <span>02:30</span>
-            </div>
-          </div>
+          <PlayList />
         </div>
       </div>
       <div className={styles.main}>
@@ -74,21 +70,13 @@ const CourseDetail = () => {
         </div>
         <div className={styles.side}>
           <div className={styles.card}>
-            <div className={styles.price}>HKD$500.0</div>
-            <div className={styles.review}>
-              <div className={styles.star}>
-                <i className="bx bxs-star" />
-                <i className="bx bxs-star" />
-                <i className="bx bxs-star" />
-                <i className="bx bx-star" />
-              </div>
-              <div>3 reviews</div>
-            </div>
-            <div className={styles.info}>
+            <Price>HKD$500.0</Price>
+            <Review />
+            <Info>
               <span>10 videos</span>
               <span>2h 30m</span>
               <span>100 classmates</span>
-            </div>
+            </Info>
             <Button>add to cart</Button>
           </div>
         </div>
@@ -100,9 +88,7 @@ const CourseDetail = () => {
         </div>
         <div className={styles.content}>
           <div>
-            <div className={styles.icon}>
-              <i className="bx bx-user" />
-            </div>
+            <Icon />
           </div>
           <div className={styles.des}>
             Lorem ipsum dolor sit amet arcu duis integer. Blandit erat turpis luctus scelerisque sed

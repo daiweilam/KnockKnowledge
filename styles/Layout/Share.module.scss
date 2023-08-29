@@ -1,0 +1,25 @@
+.share {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  i {
+    padding: 12px;
+    font-size: 36px;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.75;
+    }
+  }
+
+  &::before {
+    content: "Share :";
+    position: absolute;
+    top: 24%;
+    left: -16%;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
