@@ -59,7 +59,7 @@ const Nav = () => {
       </div>
       {popup && (
         <Popup close={() => setPopup("")}>
-          <Login tab={popup} />
+          <Login type={popup} />
         </Popup>
       )}
     </>

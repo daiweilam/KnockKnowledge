@@ -10,6 +10,7 @@
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
+  border: 1px solid #000;
   background: #000;
 
   i {
@@ -19,5 +20,11 @@
   &:hover {
     cursor: pointer;
     opacity: 0.75;
+  }
+
+  &.white {
+    color: #000;
+    border: 1px solid #000;
+    background: #fff;
   }
 }

@@ -1,0 +1,31 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  .tab {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    color: #999;
+    font-size: 42px;
+
+    .active {
+      color: #000;
+    }
+
+    div {
+      cursor: pointer;
+      opacity: 0.75;
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}
